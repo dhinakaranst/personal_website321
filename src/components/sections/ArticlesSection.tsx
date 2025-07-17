@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Globe, Code } from "lucide-react";
+import { Particles } from '@tsparticles/react';
 
 interface ArticlesSectionProps {
   onNavigate: (index: number) => void;
