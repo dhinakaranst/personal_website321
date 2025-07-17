@@ -1,6 +1,6 @@
 
 import { useCallback } from 'react';
-import Particles from 'react-particles';
+import { Particles } from '@tsparticles/react';
 import type { Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
 
@@ -36,7 +36,7 @@ const ParticlesBackground = () => {
               enable: true,
               mode: "repulse"
             },
-            resize: true
+            resize: { enable: true }
           },
           modes: {
             push: {
