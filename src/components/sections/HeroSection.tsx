@@ -46,15 +46,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       
       {/* Hero Content */}
       <div className="text-center z-10 max-w-4xl mx-auto">
-        {/* Profile Photo */}
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8 flex justify-center"
-        >
-          <ProfilePhoto className="transform hover:scale-105 transition-transform duration-300" />
-        </motion.div>
+        {/* Removed Profile Photo section */}
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -72,7 +64,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
               delay: 0.8 
             }}
           >
-            Dhinakaran
+            Dhinakaran T
           </motion.h1>
         </motion.div>
         
@@ -82,7 +74,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           transition={{ duration: 0.8, delay: 1.2 }}
         >
           <h2 className="text-2xl md:text-4xl font-light mb-8 text-purple-300">
-            Full Stack Developer & Open Source Contributor
+            Final-year Computer Science Student & Full Stack Developer
           </h2>
         </motion.div>
         
@@ -93,9 +85,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           className="space-y-6"
         >
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Building tools that solve real-world problems with Java, JavaScript, and modern web technologies. 
-            Passionate about open-source development, data structures, and helping developers through 
-            self-hostable solutions.
+            Final-year Computer Science student with strong foundations in algorithms, systems, and backend development. Experienced in building scalable full-stack applications, containerized environments, and contributing to distributed open-source projects. Eager to solve real-world engineering problems at scale in a fast-paced product-driven environment.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

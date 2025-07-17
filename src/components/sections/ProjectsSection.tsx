@@ -9,6 +9,24 @@ interface ProjectsSectionProps {
 
 const projects = [
   {
+    title: "Sitelens",
+    description: "A modern website analytics and monitoring tool providing real-time insights, traffic analysis, and uptime monitoring for webmasters and businesses.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Chart.js"],
+    image: "/placeholder.svg",
+    liveUrl: "https://github.com/dhinakaranst/sitelens", // Replace with actual live URL if available
+    githubUrl: "https://github.com/dhinakaranst/sitelens",
+    color: "#0ea5e9"
+  },
+  {
+    title: "Linknest (Linktree Alternative)",
+    description: "A customizable and privacy-focused Linktree alternative for managing and sharing all your important links in one place.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS"],
+    image: "/placeholder.svg",
+    liveUrl: "https://github.com/dhinakaranst/linknest", // Replace with actual live URL if available
+    githubUrl: "https://github.com/dhinakaranst/linknest",
+    color: "#6366f1"
+  },
+  {
     title: "CommitMetrics",
     description: "A self-hostable Git analytics dashboard built with the MERN stack. Displays commit frequency, repository trends, and code stats for developers and teams.",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
@@ -27,22 +45,22 @@ const projects = [
     color: "#4f46e5"
   },
   {
-    title: "Health Monitoring System",
-    description: "Java Swing desktop application that tracks health parameters and visualizes data using charts. Stores records in MySQL database.",
-    technologies: ["Java", "Swing", "MySQL", "Charts"],
+    title: "Cabalyze – Cab Fare Comparison Platform",
+    description: "Developed a smart fare comparison platform using React and Google Maps API to help users compare cab prices across Uber, Ola, and Rapido. Integrated real-time location and route visualization, with mock data and scalable architecture ready for live APIs.",
+    technologies: ["React+Vite", "Google Maps API", "Typescript", "HTML", "Tailwind CSS", "Vercel"],
     image: "/placeholder.svg",
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
-    color: "#f89820"
+    liveUrl: "#", // Add actual live URL if available
+    githubUrl: "#", // Add actual GitHub URL if available
+    color: "#38bdf8"
   },
   {
-    title: "AI-Powered Shorts Series",
-    description: "Educational content series of 50 short videos on data structures using AI-generated visuals and voice for social media platforms.",
-    technologies: ["AI Tools", "Video Editing", "Educational Content"],
+    title: "GitVision – GitHub Profile Visualizer",
+    description: "Built a web application that fetches and visualizes GitHub profile data with interactive charts and analytics. It displays user details, repository stats, followers, language distribution, and highlights the most starred and forked repositories. Integrated GitHub API for real-time data and used FusionCharts for data visualization.",
+    technologies: ["GitHub API", "FusionCharts", "JavaScript", "React.js", "HTML", "CSS", "Vercel"],
     image: "/placeholder.svg",
-    liveUrl: "https://youtube.com",
-    githubUrl: "https://github.com",
-    color: "#ec4899"
+    liveUrl: "#", // Add actual live URL if available
+    githubUrl: "#", // Add actual GitHub URL if available
+    color: "#6366f1"
   },
 ];
 

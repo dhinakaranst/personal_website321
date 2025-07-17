@@ -18,44 +18,73 @@ interface SkillCategory {
 
 const skills: SkillCategory[] = [
   {
-    category: "Languages",
+    category: "Programming Languages",
     skills: [
-      { name: "Java", level: 95, color: "#f89820" },
+      { name: "Java (strong)", level: 95, color: "#f89820" },
+      { name: "TypeScript", level: 90, color: "#3178c6" },
       { name: "JavaScript", level: 90, color: "#f7df1e" },
-      { name: "Python", level: 80, color: "#3776ab" },
+      { name: "SQL", level: 85, color: "#e38c00" },
+      { name: "HTML", level: 95, color: "#e34f26" },
+      { name: "CSS", level: 90, color: "#1572b6" }
     ]
   },
   {
-    category: "Backend",
+    category: "Frameworks & Libraries",
     skills: [
       { name: "Node.js", level: 90, color: "#339933" },
-      { name: "Express", level: 88, color: "#000000" },
-      { name: "REST APIs", level: 92, color: "#ff6b35" },
-      { name: "Async Programming", level: 85, color: "#4a90e2" },
+      { name: "Express.js", level: 88, color: "#000000" },
+      { name: "React.js", level: 90, color: "#61dafb" },
+      { name: "Vite", level: 85, color: "#646cff" },
+      { name: "Tailwind CSS", level: 85, color: "#38bdf8" }
     ]
   },
   {
-    category: "Frontend",
+    category: "Developer Tools",
     skills: [
-      { name: "HTML", level: 95, color: "#e34f26" },
-      { name: "CSS", level: 90, color: "#1572b6" },
-      { name: "JavaScript", level: 90, color: "#f7df1e" },
+      { name: "Visual Studio Code", level: 95, color: "#007acc" },
+      { name: "Visual Studio", level: 90, color: "#5c2d91" },
+      { name: "Cursor", level: 85, color: "#333" },
+      { name: "IDLE", level: 80, color: "#ffd43b" },
+      { name: "Redis", level: 80, color: "#d82c20" },
+      { name: "Docker", level: 80, color: "#2496ed" },
+      { name: "Kubernetes (basic)", level: 60, color: "#326ce5" }
     ]
   },
   {
-    category: "Database",
+    category: "Automation & Integration",
     skills: [
-      { name: "MongoDB", level: 88, color: "#47a248" },
-      { name: "MySQL", level: 85, color: "#4479a1" },
+      { name: "n8n (workflow automation)", level: 80, color: "#4e9f3d" },
+      { name: "GitHub Actions (CI/CD)", level: 85, color: "#2088ff" }
     ]
   },
   {
-    category: "Tools & Others",
+    category: "Version Control & Collaboration",
     skills: [
       { name: "Git", level: 95, color: "#f05032" },
-      { name: "GitHub", level: 92, color: "#181717" },
-      { name: "VS Code", level: 95, color: "#007acc" },
-      { name: "Postman", level: 88, color: "#ff6c37" },
+      { name: "GitHub", level: 92, color: "#181717" }
+    ]
+  },
+  {
+    category: "CS Fundamentals",
+    skills: [
+      { name: "Data Structures and Algorithms", level: 90, color: "#f59e42" },
+      { name: "Object-Oriented Programming (OOP)", level: 90, color: "#8e44ad" },
+      { name: "Operating Systems", level: 80, color: "#34495e" },
+      { name: "Computer Networks (TCP/IP)", level: 80, color: "#2980b9" },
+      { name: "DBMS", level: 85, color: "#e67e22" },
+      { name: "REST APIs", level: 92, color: "#ff6b35" },
+      { name: "Performance Optimization", level: 80, color: "#16a34a" },
+      { name: "Agile", level: 75, color: "#6d28d9" },
+      { name: "Unix/Linux", level: 80, color: "#333" }
+    ]
+  },
+  {
+    category: "System Design Concepts",
+    skills: [
+      { name: "REST API Design", level: 90, color: "#ff6b35" },
+      { name: "Load Balancing", level: 75, color: "#fbbf24" },
+      { name: "Caching Strategies", level: 75, color: "#f59e42" },
+      { name: "CI/CD Pipelines", level: 85, color: "#2088ff" }
     ]
   }
 ];
@@ -99,6 +128,8 @@ const SkillsSection = ({ onNavigate }: SkillsSectionProps) => {
   
   return (
     <div className="min-h-screen py-12 md:py-20 px-4 md:px-6 relative">
+      {/* Background gradient effect */}
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
       {/* Animated background with floating bubbles - hide some on mobile */}
       <div className="absolute inset-0 opacity-20 overflow-hidden">
         <SkillBubble 
@@ -225,7 +256,7 @@ const SkillsSection = ({ onNavigate }: SkillsSectionProps) => {
               Always Learning
             </h3>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              Completed 150+ days of LeetCode practice with Striver's DSA Sheet. 
+              Completed 200+ days of LeetCode practice. 
               Actively contributing to open-source projects like Kestra and 
               continuously exploring new technologies to build better tools.
             </p>

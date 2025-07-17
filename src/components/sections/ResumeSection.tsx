@@ -9,7 +9,7 @@ interface ResumeSectionProps {
 const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
   const handleDownload = () => {
     try {
-      const resumeUrl = "/resume.pdf";
+      const resumeUrl = "https://drive.google.com/uc?export=download&id=1Nw3zcQuu0xu2yff1hS-sHUOpjT8gGXKY";
       const link = document.createElement("a");
       link.href = resumeUrl;
       link.download = "Dhinakaran_Resume.pdf";
@@ -21,11 +21,13 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
   };
 
   const handlePreview = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open("https://drive.google.com/file/d/1Nw3zcQuu0xu2yff1hS-sHUOpjT8gGXKY/view?usp=sharing", "_blank");
   };
 
   return (
     <div className="min-h-screen py-20 px-6 relative">
+      {/* Background gradient effect */}
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +39,7 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
             Resume
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            Download my resume to learn more about my experience, skills, and achievements.
+            Final-year Computer Science student (K.S.Rangasamy College of Technology, 2022-2026, CGPA: 7.9/10). Strong in algorithms, systems, and backend. Experienced in scalable full-stack apps, containers, and open-source. Eager to solve real-world engineering problems at scale.
           </p>
         </motion.div>
 
@@ -87,21 +89,12 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
               <div className="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center">
                 <Trophy className="w-6 h-6 text-blue-400" />
               </div>
-              <h2 className="text-2xl font-bold text-white">Key Highlights</h2>
+              <h2 className="text-2xl font-bold text-white">Education & Highlights</h2>
             </div>
-            <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start gap-3">
-                <Code className="w-5 h-5 text-purple-400 mt-1" />
-                <span>Full Stack Development with React, Node.js, and Java</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Users className="w-5 h-5 text-blue-400 mt-1" />
-                <span>Open Source Contributions and Community Engagement</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Trophy className="w-5 h-5 text-pink-400 mt-1" />
-                <span>Competitive Programming and Algorithm Expertise</span>
-              </li>
+            <ul className="space-y-4 text-gray-300 text-left">
+              <li><b>Education:</b> K.S.Rangasamy College of Technology, B.E in Computer Science and Engineering (2022-2026), CGPA: 7.9/10</li>
+              <li><b>Certifications:</b> Infosys Springboard – Node.js + Express Certification; Accenture Go for Gold Contest – iAspire Gold Level, January 2025</li>
+              <li><b>Open Source:</b> 12+ PRs to Kestra, Spiderly, Open Nest Africa (UI, bugfixes, merged PRs)</li>
             </ul>
           </motion.div>
         </div>

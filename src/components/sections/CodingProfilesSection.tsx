@@ -11,7 +11,7 @@ const profiles = [
     platform: "GitHub",
     username: "@dhinakaranst",
     description: "Open source contributions and personal projects",
-    stats: { repos: "15+"},
+    stats: { repos: "30+"},
     url: "https://github.com/dhinakaranst",
     color: "#333",
     icon: Github,
@@ -21,37 +21,19 @@ const profiles = [
     platform: "LeetCode",
     username: "Dhinakaran_Thillainathan",
     description: "Competitive programming and algorithm challenges",
-    stats: { solved: "150+" },
+    stats: { solved: "200+" },
     url: "https://leetcode.com/u/DHINAKARAN_Thillainathan/",
     color: "#ffa116",
     icon: Code,
-    achievements: ["Knight Badge", "Contest Specialist"]
-  },
-  {
-    platform: "SkillRack",
-    username: "john_coder",
-    description: "Programming practice and skill assessments",
-    stats: { problems: "300+", score: "950", streak: "45 days" },
-    url: "https://skillrack.com/john_coder",
-    color: "#4a90e2",
-    icon: Target,
-    achievements: ["Problem Solver", "Consistent Learner"]
-  },
-  {
-    platform: "CodePen",
-    username: "johndoe_ui",
-    description: "Frontend experiments and creative coding",
-    stats: { pens: "100+", hearts: "2.5k", views: "50k+" },
-    url: "https://codepen.io/johndoe_ui",
-    color: "#47cf73",
-    icon: Trophy,
-    achievements: ["Featured Developer", "Top Contributor"]
+    achievements: ["Contest Specialist"]
   }
 ];
 
 const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
   return (
     <div className="min-h-screen py-20 px-6 relative">
+      {/* Background gradient effect */}
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -91,14 +73,7 @@ const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
                 {/* Header */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <motion.div
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6 }}
-                      className="w-16 h-16 rounded-xl flex items-center justify-center"
-                      style={{ backgroundColor: profile.color + "20", border: `2px solid ${profile.color}` }}
-                    >
-                      <profile.icon className="w-8 h-8" style={{ color: profile.color }} />
-                    </motion.div>
+                    {/* Removed icon/photo section */}
                     <div>
                       <h3 className="text-2xl font-bold text-white">
                         {profile.platform}
