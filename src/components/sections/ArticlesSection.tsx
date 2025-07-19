@@ -26,7 +26,62 @@ const articles = [
     status: "Active Development",
     impact: "Improved developer experience and tooling",
     color: "#f89820"
-  }
+  },
+  // 1. OpenNest Africa
+  {
+    title: "OpenNest Africa",
+    description: "Contributed to the OpenNest Africa open-source project by updating all placeholder and section texts across the web application to enhance clarity, accessibility, and user experience. Replaced generic content with meaningful and user-friendly text in key areas like the login form, 'Our Community' section, and CTA section. Collaborated with maintainers to revise and finalize the changes, and reverted unrelated footer modifications as per feedback.",
+    githubUrl: "https://github.com/open-nest-africa/open-nest-africa/pull/88",
+    website: "https://open-nest-africa.github.io/",
+    contribution: "Pull Request #88",
+    status: "Merged & Closed",
+    impact: "Improved clarity, accessibility, and user experience across the app",
+    color: "#10b981"
+  },
+  // 2. Spiderly 404 Page
+  {
+    title: "Spiderly 404 Not Found Page",
+    description: "Implemented a responsive and user-friendly 404 Not Found page for an open-source project to handle invalid routes gracefully. Created a reusable NotFoundComponent using the existing homepage hero layout, with updated text, meta title, and meta description. Improved the routing configuration to display this page for unknown URLs and ensured visual consistency with the overall site design. Collaborated with the maintainer and incorporated feedback to refine and finalize the update.",
+    githubUrl: "https://github.com/filiptrivan/spiderly-website/pull/6",
+    website: "https://spiderly.io/",
+    contribution: "Pull Request #6",
+    status: "Merged & Closed",
+    impact: "Improved user experience for invalid routes and enhanced site consistency",
+    color: "#e11d48"
+  },
+  // 3. Kestra Backfill Button
+  {
+    title: "Kestra Backfill Executions Button",
+    description: "Contributed to the Kestra open-source project by implementing a new 'Backfill Executions' button in the Triggers table (Admin section) as part of issue #8606. Added a new column to the table, tested multiple rendering strategies, and resolved a duplicate loadData method bug. Collaborated closely with maintainers, responded to feedback, and finalized the UI behavior to match design expectations.",
+    githubUrl: "https://github.com/kestra-io/kestra/pull/8624",
+    website: "https://kestra.io",
+    contribution: "Pull Request #8624",
+    status: "Merged & Closed",
+    impact: "Enabled backfill executions directly from the UI, improving admin workflow",
+    color: "#6366f1"
+  },
+  // 4. Spiderly robots.txt
+  {
+    title: "Spiderly robots.txt SEO",
+    description: "Contributed to the project by adding a properly configured robots.txt file to improve search engine indexing and control crawler access. Allowed all web crawlers and added a sitemap reference to boost SEO visibility. Ensured correct placement in the public directory, verified file accessibility via local testing and curl, and followed SEO best practices.",
+    githubUrl: "https://github.com/filiptrivan/spiderly-website/pull/9",
+    website: "https://spiderly.io/robots.txt",
+    contribution: "Pull Request #9",
+    status: "Merged & Closed",
+    impact: "Boosted SEO visibility and improved crawler access control",
+    color: "#f59e42"
+  },
+  // 5. Kestra Sifflet Plugin
+  {
+    title: "Kestra Sifflet Plugin - RunRule Task",
+    description: "Developed and contributed a new RunRule task to the Kestra Sifflet plugin, enabling the execution of Sifflet data quality rules directly via API. Implemented authentication, dynamic configuration, and error handling. Addressed reviewer feedback, improved test coverage, added validation, and integrated an official plugin icon. Collaborated closely with maintainers and successfully merged after comprehensive review.",
+    githubUrl: "https://github.com/kestra-io/plugin-sifflet/pull/2",
+    website: "https://kestra.io/plugins/sifflet/",
+    contribution: "Pull Request #2",
+    status: "Merged & Closed",
+    impact: "Enabled direct execution of Sifflet data quality rules via API in Kestra",
+    color: "#0ea5e9"
+  },
 ];
 
 const ArticlesSection = ({ onNavigate }: ArticlesSectionProps) => {
