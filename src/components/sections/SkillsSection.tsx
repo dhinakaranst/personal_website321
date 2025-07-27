@@ -129,7 +129,7 @@ const SkillsSection = ({ onNavigate }: SkillsSectionProps) => {
   return (
     <div className="min-h-screen py-12 md:py-20 px-4 md:px-6 relative">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-slate-800/30 via-blue-900/30 to-slate-900/30"></div>
       {/* Animated background with floating bubbles - hide some on mobile */}
       <div className="absolute inset-0 opacity-20 overflow-hidden">
         <SkillBubble 
@@ -206,7 +206,7 @@ const SkillsSection = ({ onNavigate }: SkillsSectionProps) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: categoryIndex * 0.3 + skillIndex * 0.1 + 0.5 }}
-                        className="text-purple-400 font-bold text-sm md:text-base"
+                        className="text-blue-400 font-bold text-sm md:text-base"
                       >
                         {typeof skill.level === 'number' ? `${skill.level}%` : 'N/A'}
                       </motion.span>
@@ -251,7 +251,7 @@ const SkillsSection = ({ onNavigate }: SkillsSectionProps) => {
           transition={{ duration: 0.8, delay: 1.5 }}
           className="text-center mt-10 md:mt-16"
         >
-          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-white/10 rounded-xl md:rounded-2xl p-4 md:p-8 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-slate-800/20 to-blue-900/20 backdrop-blur-sm border border-white/10 rounded-xl md:rounded-2xl p-4 md:p-8 max-w-2xl mx-auto">
             <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">
               Always Learning
             </h3>

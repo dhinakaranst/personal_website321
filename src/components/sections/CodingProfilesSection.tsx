@@ -33,7 +33,7 @@ const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
   return (
     <div className="min-h-screen py-20 px-6 relative">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-slate-800/30 via-blue-900/30 to-slate-900/30"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -133,7 +133,7 @@ const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.2 + achievementIndex * 0.1 + 0.8 }}
                         whileHover={{ scale: 1.05 }}
-                        className="px-3 py-1 bg-gradient-to-r from-purple-600/30 to-pink-600/30 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30"
+                        className="px-3 py-1 bg-gradient-to-r from-slate-700/30 to-blue-800/30 text-blue-300 rounded-full text-sm font-medium border border-blue-700/30"
                       >
                         {achievement}
                       </motion.span>
@@ -148,7 +148,7 @@ const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
                 >
                   <Button
                     onClick={() => window.open(profile.url, "_blank")}
-                    className="w-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 hover:from-purple-600/30 hover:to-pink-600/30 text-white border border-white/10 relative overflow-hidden group"
+                    className="w-full bg-gradient-to-r from-slate-800/20 to-blue-900/20 hover:from-slate-700/30 hover:to-blue-800/30 text-white border border-white/10 relative overflow-hidden group"
                   >
                     <span className="flex items-center justify-center gap-2 relative z-10">
                       Visit {profile.platform}
@@ -173,7 +173,7 @@ const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 max-w-3xl mx-auto">
+          <div className="bg-gradient-to-r from-slate-800/10 to-blue-900/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-4">
               Let's Collaborate
             </h3>
@@ -184,7 +184,7 @@ const CodingProfilesSection = ({ onNavigate }: CodingProfilesSectionProps) => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => onNavigate(5)}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white"
+                className="bg-gradient-to-r from-slate-700 to-blue-800 hover:from-slate-600 hover:to-blue-700 text-white"
               >
                 Get In Touch
               </Button>

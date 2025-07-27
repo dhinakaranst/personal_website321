@@ -33,10 +33,10 @@ const Portfolio = () => {
   const CurrentComponent = sections[currentSection].component;
 
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden">
+    <div className="relative min-h-screen gradient-background overflow-hidden">
       <ParticlesBackground />
       
-      {/* Animated gradient background */}
+      {/* Minimal background */}
       <div className="fixed inset-0 gradient-blur -z-10" />
       
       <Navigation 

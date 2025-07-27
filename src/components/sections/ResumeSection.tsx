@@ -27,7 +27,7 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
   return (
     <div className="min-h-screen py-20 px-6 relative">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-slate-800/30 via-blue-900/30 to-slate-900/30"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -51,8 +51,8 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
             className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
           >
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center">
-                <FileText className="w-6 h-6 text-purple-400" />
+              <div className="w-12 h-12 rounded-xl bg-blue-800/20 flex items-center justify-center">
+                <FileText className="w-6 h-6 text-blue-400" />
               </div>
               <h2 className="text-2xl font-bold text-white">Resume</h2>
             </div>
@@ -63,7 +63,7 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
             <div className="flex gap-4">
               <Button
                 onClick={handleDownload}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white"
+                className="bg-gradient-to-r from-slate-700 to-blue-800 hover:from-slate-600 hover:to-blue-700 text-white"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download PDF

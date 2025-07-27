@@ -36,8 +36,8 @@ const ContactSection = ({ onNavigate }: ContactSectionProps) => {
 
   return (
     <div className="min-h-screen py-20 px-6 relative">
-      {/* Background gradient effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
+      {/* Minimal background */}
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-gray-800/30 via-gray-700/20 to-gray-800/30"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ const ContactSection = ({ onNavigate }: ContactSectionProps) => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-glow">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 subtle-text-glow">
             Get In Touch
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
@@ -114,7 +114,7 @@ const ContactSection = ({ onNavigate }: ContactSectionProps) => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 text-lg font-semibold relative overflow-hidden group"
+                  className="w-full bg-white text-black hover:bg-gray-200 text-lg font-semibold py-3 relative overflow-hidden group transition-all duration-300"
                 >
                   {isSubmitting ? (
                     <motion.div
@@ -167,7 +167,7 @@ const ContactSection = ({ onNavigate }: ContactSectionProps) => {
                     whileHover={{ scale: 1.05, x: 10 }}
                     className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 group"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 bg-gradient-to-br from-slate-600 to-blue-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -202,7 +202,7 @@ const ContactSection = ({ onNavigate }: ContactSectionProps) => {
                     className="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 text-center group"
                     style={{ borderLeft: `4px solid ${social.color}` }}
                   >
-                    <div className="text-white font-semibold group-hover:text-purple-300 transition-colors">
+                    <div className="text-white font-semibold group-hover:text-blue-300 transition-colors">
                       {social.name}
                     </div>
                   </motion.a>

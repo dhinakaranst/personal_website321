@@ -15,7 +15,7 @@ const CallToActionSection = ({ onNavigate }: CallToActionSectionProps) => {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-purple-500 rounded-full opacity-30"
+            className="absolute w-2 h-2 bg-blue-500 rounded-full opacity-30"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -55,7 +55,7 @@ const CallToActionSection = ({ onNavigate }: CallToActionSectionProps) => {
           className="text-5xl md:text-7xl font-bold mb-6 text-glow"
         >
           Ready to Build Something
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-slate-300">
             {" "}Amazing?
           </span>
         </motion.h1>
@@ -88,7 +88,7 @@ const CallToActionSection = ({ onNavigate }: CallToActionSectionProps) => {
               <Button
                 onClick={() => onNavigate(5)}
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 hover:from-purple-700 hover:via-pink-700 hover:to-red-700 text-white px-12 py-4 text-xl font-semibold relative overflow-hidden group"
+                className="bg-gradient-to-r from-slate-700 via-blue-800 to-slate-800 hover:from-slate-600 hover:via-blue-700 hover:to-slate-700 text-white px-12 py-4 text-xl font-semibold relative overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <Star className="w-5 h-5" />
@@ -111,7 +111,7 @@ const CallToActionSection = ({ onNavigate }: CallToActionSectionProps) => {
                 onClick={() => onNavigate(3)}
                 variant="outline"
                 size="lg"
-                className="border-2 border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white px-12 py-4 text-xl backdrop-blur-sm"
+                className="border-2 border-blue-500 text-blue-300 hover:bg-blue-600 hover:text-white px-12 py-4 text-xl backdrop-blur-sm"
               >
                 View My Work
               </Button>

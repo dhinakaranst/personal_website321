@@ -9,7 +9,7 @@ const ParticlesBackground = () => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: any) => {
+  const particlesLoaded = useCallback(async (container: unknown) => {
     console.log('Particles loaded', container);
   }, []);
 
@@ -50,13 +50,13 @@ const ParticlesBackground = () => {
         },
         particles: {
           color: {
-            value: ["#9333ea", "#4f46e5", "#ec4899", "#f59e0b", "#10b981"]
+            value: ["#ffffff", "#f5f5f5", "#e5e5e5"]
           },
           links: {
-            color: "#9333ea",
+            color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.1,
             width: 1
           },
           move: {
@@ -66,18 +66,17 @@ const ParticlesBackground = () => {
               default: "bounce"
             },
             random: false,
-            speed: 1,
+            speed: 0.5,
             straight: false
           },
           number: {
             density: {
-              enable: true,
-              area: 800
+              enable: true
             },
-            value: 80
+            value: 50
           },
           opacity: {
-            value: 0.5
+            value: 0.2
           },
           shape: {
             type: "circle"
@@ -85,7 +84,7 @@ const ParticlesBackground = () => {
           size: {
             value: {
               min: 1,
-              max: 5
+              max: 3
             }
           }
         },

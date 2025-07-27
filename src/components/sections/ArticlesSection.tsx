@@ -88,7 +88,7 @@ const ArticlesSection = ({ onNavigate }: ArticlesSectionProps) => {
   return (
     <div className="min-h-screen py-20 px-6 relative">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-slate-800/30 via-blue-900/30 to-slate-900/30"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

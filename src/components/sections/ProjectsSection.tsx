@@ -68,7 +68,7 @@ const ProjectsSection = ({ onNavigate }: ProjectsSectionProps) => {
   return (
     <div className="min-h-screen py-20 px-6 relative">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-pink-600/30"></div>
+      <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-slate-800/30 via-blue-900/30 to-slate-900/30"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
@@ -105,7 +105,7 @@ const ProjectsSection = ({ onNavigate }: ProjectsSectionProps) => {
               }}
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden group"
             >
-              <div className="relative h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 flex items-center justify-center">
+              <div className="relative h-48 bg-gradient-to-br from-slate-700/20 to-blue-800/20 flex items-center justify-center">
                 <motion.div
                   className="w-24 h-24 rounded-xl"
                   style={{ backgroundColor: project.color }}
@@ -155,7 +155,7 @@ const ProjectsSection = ({ onNavigate }: ProjectsSectionProps) => {
                     <motion.span
                       key={tech}
                       whileHover={{ scale: 1.1 }}
-                      className="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-blue-700/30 text-blue-300 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </motion.span>
@@ -183,14 +183,14 @@ const ProjectsSection = ({ onNavigate }: ProjectsSectionProps) => {
             <div className="flex flex-wrap gap-2 justify-center">
               <span className="px-3 py-1 bg-green-600/30 text-green-300 rounded-full text-sm">Plugin Development</span>
               <span className="px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-sm">CLI Integration</span>
-              <span className="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm">Workflow Debugging</span>
+              <span className="px-3 py-1 bg-slate-700/30 text-slate-300 rounded-full text-sm">Workflow Debugging</span>
             </div>
           </div>
           
           <Button
             onClick={() => onNavigate(5)}
             size="lg"
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg"
+            className="bg-gradient-to-r from-slate-700 to-blue-800 hover:from-slate-600 hover:to-blue-700 text-white px-8 py-3 text-lg"
           >
             Let's Work Together
           </Button>
