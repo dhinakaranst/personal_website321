@@ -2,15 +2,18 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import ProfilePhoto from "@/components/ProfilePhoto";
-import TextPressure from "@/components/TextPressure";
+import VariableProximity from "@/components/VariableProximity";
+import { useRef } from "react";
 
 interface HeroSectionProps {
   onNavigate: (index: number) => void;
 }
 
 const HeroSection = ({ onNavigate }: HeroSectionProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 relative pt-24">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 relative pt-24" ref={containerRef}>
       {/* Minimal Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-gray-800/10 to-gray-900/20"></div>
@@ -23,8 +26,8 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             key={i}
             className="absolute w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/5"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1200),
+              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 800),
               scale: Math.random() * 0.3 + 0.1,
               opacity: 0.05 + Math.random() * 0.1,
             }}
@@ -59,19 +62,17 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
+            className="mb-8"
           >
-            <div style={{ position: 'relative', height: '120px', width: '100%', marginBottom: '2rem' }}>
-              <TextPressure
-                text="Dhinakaran T"
-                flex={true}
-                alpha={false}
-                stroke={false}
-                width={true}
-                weight={true}
-                italic={true}
-                textColor="#ffffff"
-                strokeColor="#ff0000"
-                minFontSize={32}
+            <div className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4">
+              <VariableProximity
+                label="DHINAKARAN T"
+                className="text-white"
+                fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                containerRef={containerRef}
+                radius={150}
+                falloff="exponential"
               />
             </div>
           </motion.div>
@@ -93,6 +94,8 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             className="space-y-6"
           >
             <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+              Passionate about creating innovative web solutions and bringing ideas to life through code.
+              Specialized in modern web technologies and always eager to learn new skills.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
