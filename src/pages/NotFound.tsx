@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft } from "lucide-react";
 import FuzzyText from "@/components/FuzzyText";
-import ParticlesBackground from "@/components/ParticlesBackground";
+import ParticlesBackground from "@/components/DarkVeil";
 
 const NotFound = () => {
   const location = useLocation();

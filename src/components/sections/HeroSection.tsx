@@ -4,6 +4,7 @@ import { ArrowDown } from "lucide-react";
 import ProfilePhoto from "@/components/ProfilePhoto";
 import VariableProximity from "@/components/VariableProximity";
 import { useRef } from "react";
+import TextType from '../TextType';
 
 interface HeroSectionProps {
   onNavigate: (index: number) => void;
@@ -76,16 +77,15 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
               />
             </div>
           </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-gray-400">
-              Final-year Computer Science Student & Full Stack Developer
-            </h2>
-          </motion.div>
+          <div className="text-5xl font-bold mb-6">
+         <TextType 
+  text={["Final Year Computer Science Student", "Full Stack Developer", "Open Source Contributor"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+/></div>
+
           
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -93,10 +93,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="space-y-6"
           >
-            <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
-              Passionate about creating innovative web solutions and bringing ideas to life through code.
-              Specialized in modern web technologies and always eager to learn new skills.
-            </p>
+           
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
