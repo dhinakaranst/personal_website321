@@ -21,7 +21,7 @@ const ResumeSection = ({ onNavigate }: ResumeSectionProps) => {
   };
 
   const handlePreview = () => {
-    window.open("https://drive.google.com/file/d/1Nw3zcQuu0xu2yff1hS-sHUOpjT8gGXKY/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1F765-PlveBHYKzouI2HSKQFXwOFvsQjz/view?usp=sharing", "_blank");
   };
 
   return (
